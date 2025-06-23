@@ -1,1 +1,49 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+@theme {
+  /* PRIMARY COLOR */
+  --color-blue-50: oklch(97.51% 0.013 244.25);
+  --color-blue-100: oklch(94.31% 0.024 238.40);
+  --color-blue-200: oklch(90.44% 0.044 234.59);
+  --color-blue-300: oklch(84.22% 0.075 234.22);
+  --color-blue-400: oklch(76.35% 0.108 238.06);
+  --color-blue-500: oklch(68.46% 0.137 246.67);
+  --color-blue-600: oklch(60.87% 0.156 253.55);
+  --color-blue-700: oklch(56.22% 0.163 257.07);
+  --color-blue-800: oklch(47.68% 0.131 258.05);
+  --color-blue-900: oklch(41.98% 0.099 256.72);
+  --color-blue-950: oklch(30.90% 0.064 258.57);
+
+  /* SECONDARY COLOR */
+  --color-cyan-50: oklch(98.11% 0.010 189.07);
+  --color-cyan-100: oklch(94.04% 0.033 184.89);
+  --color-cyan-200: oklch(88.14% 0.063 186.05);
+  --color-cyan-300: oklch(80.45% 0.089 188.30);
+  --color-cyan-400: oklch(72.92% 0.097 190.13);
+  --color-cyan-500: oklch(63.19% 0.095 190.52);
+  --color-cyan-600: oklch(53.85% 0.081 192.81);
+  --color-cyan-700: oklch(46.19% 0.066 195.11);
+  --color-cyan-800: oklch(40.10% 0.054 195.22);
+  --color-cyan-900: oklch(35.86% 0.044 195.37);
+  --color-cyan-950: oklch(25.21% 0.033 198.48);
+
+  /* NEUTRAL COLOR */
+  --color-neutral-50: oklch(97.31% 0.000 0);
+  --color-neutral-100: oklch(92.80% 0.000 0);
+  --color-neutral-200: oklch(86.07% 0.000 0);
+  --color-neutral-300: oklch(75.72% 0.000 0);
+  --color-neutral-400: oklch(59.99% 0.000 0);
+  --color-neutral-500: oklch(53.48% 0.000 0);
+  --color-neutral-600: oklch(47.84% 0.000 0);
+  --color-neutral-700: oklch(42.76% 0.000 0);
+  --color-neutral-800: oklch(39.04% 0.000 0);
+  --color-neutral-900: oklch(36.00% 0.000 0);
+  --color-neutral-950: oklch(26.86% 0.000 0);
+
+}
+
+@layer base {
+  body {
+    @apply bg-neutral-50 dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100;
+  }
+}
